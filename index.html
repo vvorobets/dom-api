@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css"
+    </head>
+    <body>
+            <h1>Academy 2018 • Task: DOM API / Browser API</h1>
+            <div class="controls">
+                <div class="date-search">Sort by date:
+                    <br>
+                    <button id="sortNewestFirst">
+                        <i class="fas fa-arrow-up"></i> Newest first
+                    </button>
+                    <button id="sortOldestFirst">
+                        <i class="fas fa-arrow-down"></i> Oldest first
+                    </button>
+                </div>
+            
+                <div class="tag-search">Sort by tags:
+                    <form id="tagsCheckbox">
+                        <input type="checkbox" name="tags" value="Business">Business
+                        <br>
+                        <input type="checkbox" name="tags" value="Politics">Politics
+                        <br>
+                        <input type="checkbox" name="tags" value="Sport">Sport
+                        <br>
+                        <input type="checkbox" name="tags" value="Food">Food
+                        <br>
+                        <input type="checkbox" name="tags" value="Tech">Tech
+                        <br>
+                        <input type="checkbox" name="tags" value="Culture">Culture
+                        <br>
+                        <input type="checkbox" name="tags" value="Showbiz">Showbiz
+                        <br>
+                        <input id="sortByTags" type="submit" value="Submit">
+                        <input id="resetTags" type="submit" value="Reset">
+                    </form>
+                </div>
+                <div class="quick-search">
+                    <i class="fas fa-search"></i> Find posts:
+                    <br>
+                    <input type="search" id="searchPosts" placeholder="Search posts...">
+                </div>
+                    <button id="returnTop">
+                        <i class="fas fa-arrow-up"></i> Top
+                    </button>
+                </div>
+            <div id="container">
+        </div>
+    </body>
+</html>
