@@ -25,7 +25,8 @@ window.onload = () => {
                         const sortNewestFirstButton = document.getElementById('sortNewestFirst');
                         sortNewestFirstButton.addEventListener('click', (e) => {
                             e.preventDefault();
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
+                            posts = [];
                             renderedPosts = INIT_POSTS_NUMBER;
                             sortNewestFirst(data);
                             render10items(data);
@@ -36,7 +37,7 @@ window.onload = () => {
                         const sortOldestFirstButton = document.getElementById('sortOldestFirst');
                         sortOldestFirstButton.addEventListener('click', (e) => {
                             e.preventDefault();
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
                             renderedPosts = INIT_POSTS_NUMBER;
                             sortOldestFirst(data);
                             render10items(data);
@@ -56,7 +57,7 @@ window.onload = () => {
                                 }
                             }
                             posts = sortByTags(data, tagsArr);
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
                             render10items(posts);
                         });
 
@@ -71,7 +72,7 @@ window.onload = () => {
                                     tagOption.checked = false;
                                 }
                             }
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
                             render10items(data);
                             posts = [];
                         });
@@ -82,7 +83,7 @@ window.onload = () => {
                             e.preventDefault();
                             renderedPosts = INIT_POSTS_NUMBER;
                             posts = searchPosts(data, e.target.value);
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
                             render10items(posts);
                         });
                         /* searchButton.addEventListener('blur', (e) => {
@@ -127,7 +128,7 @@ window.onload = () => {
                         returnTop.addEventListener('click', (e) => {
                             e.preventDefault();
                             renderedPosts = INIT_POSTS_NUMBER;
-                            container.innerHTML = '';
+                            container.innerHTML = '<h3><hr></h3>';
                             if (posts.length > 0) {
                                     render10items(posts);
                                 } else render10items(data);
